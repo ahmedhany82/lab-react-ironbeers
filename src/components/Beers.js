@@ -26,8 +26,8 @@ export default class Beers extends Component {
         let beersList = this.state.beers.map(beer => {
             return (
                 <div style={{width: '50vw'}} className="d-flex flex-row justify-content-center mx-auto mt-3 mb-3">
-                    <img style={{height: "220px", width: "55px"}} className="ml-5 mr-5" src={beer.image_url} alt=""/>
-                    <div style={{height: "220px", width: "500px"}} className="d-flex flex-column justify-content-center align-self-center">
+                    <img style={{height: "28vh", width: "5vw"}} className="ml-5 mr-5" src={beer.image_url} alt=""/>
+                    <div style={{height: "28vh", width: "30vw"}} className="d-flex flex-column justify-content-center align-self-center">
                         <Link to={`/beers/${beer._id}`} ><h1>{beer.name}</h1></Link>
                         <h3>{beer.tagline}</h3>
                         <p>Created by: {beer.contributed_by}</p>
