@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Navbar from './Navbar'
 import BeerDetails from './BeerDetails'
 
 export default class SingleBeer extends Component {
@@ -24,6 +25,7 @@ export default class SingleBeer extends Component {
         }
         return (
             <div>
+                <Navbar/>
                 <BeerDetails beer={this.state.beer}/>
             </div>
         )
